@@ -37,3 +37,19 @@ const v5 = ["dog", "cat"];
 v5[0] = "bird";
 v5.push("monkey");
 console.log(v5);
+
+/**
+ * テンプレート文字列
+ */
+// 文字列の中に javascriptの変数を便利に埋め込む
+// pythonでいう print(f'{num}です')ってことや。
+const name = "ken";
+const age = 25;
+
+// 従来の方法
+const msg1 = "my name is " + name + ". " + "I am " + age + "years old.";
+console.log(msg1);
+
+// テンプレート文字列
+const msg2 = `my name is ${name}. I am ${age}years old.`;
+console.log(msg2);
