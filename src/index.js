@@ -196,3 +196,17 @@ const checkSum = (n1, n2) => {
   return n1 + n2 > 100 ? 'over 100' : 'less than 100';
 }
 console.log(checkSum(50, 60));
+
+/**
+ * 論理演算子の意味を知ろう &&, ||
+ */
+
+// || 左側が falseなら右側を返す
+const num4 = null;
+const fee4 = num4 || '未設定です';
+console.log(fee4);
+
+// && 左側が trueなら右側を返す
+const num5 = 100;
+const fee5 = num5 && '何か設定されました';
+console.log(fee5);
