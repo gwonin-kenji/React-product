@@ -143,3 +143,41 @@ console.log(arr7);
 const arr8 = arr4;
 arr8[0] = 100;
 console.log(arr4); //arr4の中身まで書き換えられてしまう
+
+/**
+* mapやfilterを使った配列の処理
+*/
+const nameArr = ["Ken", "Mike", "Tom"];
+
+// 従来の for
+for (let index = 0; index < nameArr.length; ++index) {
+  console.log(nameArr[index]);
+};
+
+// map
+nameArr.map((name) => console.log(name));
+
+// mapの第二引数を名義することで、配列のインデックスを取得できる
+nameArr.map((name, idx) => console.log(`${idx}番目は、${name}です`));
+
+const nameArr2 = nameArr.map((name) => {
+ return name;
+});
+console.log(nameArr2);
+
+// filter 
+const numArr = [1, 2, 3, 4, 5];
+const oddNum = numArr.filter((num) => {
+ return num % 2 !== 0;
+});
+console.log(oddNum);
+
+// mapを使った実践
+const newNameArr = nameArr.map((name) => {
+  if (name === "Ken") {
+    return `${name}さん`;
+  } else {
+    return name;
+  }
+});
+console.log(newNameArr);
