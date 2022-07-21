@@ -53,3 +53,28 @@ console.log(msg1);
 // テンプレート文字列
 const msg2 = `my name is ${name}. I am ${age}years old.`;
 console.log(msg2);
+
+/**
+ * 従来の関数
+ */
+function func1(msg) {
+  return msg;
+}
+console.log(func1("こんにちは"));
+
+const v6 = function (msg) {
+  return msg;
+};
+console.log(v6("こんばんは"));
+
+/**
+ *  arrow関数
+ */
+const func2 = (msg) => {
+  return msg;
+};
+console.log(func2("arrow関数"));
+
+// 一行で returnできるときは {}を省略できる
+const func3 = (num1, num2) => num1 + num2;
+console.log(func3(10, 20));
