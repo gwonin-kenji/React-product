@@ -78,3 +78,28 @@ console.log(func2("arrow関数"));
 // 一行で returnできるときは {}を省略できる
 const func3 = (num1, num2) => num1 + num2;
 console.log(func3(10, 20));
+
+/**
+ * 分割代入
+ * pythonでいう unpacking
+ * name, age = ['ken', 25]
+ */
+const myProfile = {
+  name1: "ken",
+  age1: "25"
+};
+const msg3 = `名前は ${myProfile.name1}です。年齢は ${myProfile.age1}歳です。`;
+console.log(msg3);
+
+const { name1, age1 } = myProfile;
+const msg4 = `名前は ${name1}です。年齢は ${age1}歳です。`;
+console.log(msg4);
+
+// 配列
+const myProfile1 = ["kenta", 28];
+const msg5 = `名前は ${myProfile1[0]}です。年齢は ${myProfile1[1]}歳です。`;
+console.log(msg5);
+
+const [name2, age2] = myProfile1;
+const msg6 = `名前は ${name2}です。年齢は ${age2}歳です。`;
+console.log(msg6);
