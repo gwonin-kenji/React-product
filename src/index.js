@@ -103,3 +103,9 @@ console.log(msg5);
 const [name2, age2] = myProfile1;
 const msg6 = `名前は ${name2}です。年齢は ${age2}歳です。`;
 console.log(msg6);
+
+/**
+ * デフォルト値、引数など
+ */
+const sayHello = (name = "guest") => console.log(`hello ${name}!`);
+sayHello("Ken");
