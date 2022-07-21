@@ -25,7 +25,7 @@ li {
   margin-right: 8px;
 }
 
-.input_area {
+.input-area {
   background-color: #c1ffff;
   width: 400px;
   height: 30px;
@@ -34,7 +34,7 @@ li {
   border-radius: 8px;
 }
 
-.imcomplete_area {
+.incomplete-area {
   background-color: #c6ffe2;
   width: 400px;
   height: 200px;
@@ -43,7 +43,7 @@ li {
   border-radius: 8px;
 }
 
-.complete_area {
+.complete-area {
   background-color: #ffffe0;
   width: 400px;
   height: 200px;
@@ -59,7 +59,7 @@ li {
   color: #666;
 }
 
-.list_row {
+.list-row {
   display: flex;
   padding-bottom: 4px;
   align-items: center;
