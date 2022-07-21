@@ -181,3 +181,18 @@ const newNameArr = nameArr.map((name) => {
   }
 });
 console.log(newNameArr);
+
+/**
+ * 三項演算子: 一行で if elseを使う書き方
+ */
+const var1 = 1 > 0 ? 'trueです' : 'falseです';
+console.log(var1);
+
+const num3 = 1300;
+const formattedNum = typeof num3 === 'number' ? num3.toLocaleString() : '数値を入力してください';
+console.log(num3);
+
+const checkSum = (n1, n2) => {
+  return n1 + n2 > 100 ? 'over 100' : 'less than 100';
+}
+console.log(checkSum(50, 60));
